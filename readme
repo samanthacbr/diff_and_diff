@@ -1,0 +1,9 @@
+readme
+
+Hola amigos, por lo pronto les dejó el esqueleto de la pptx que usé para otra materia.
+Nos puede servir para vaciar info y estructurar ideas. Salu2.
+
+
+script.Rmd<------- archivo de trabajo en R markdown
+script.html<------ producto del archivo de trabajo
+img<-------------- carpeta con las imagenes que el Rmd usa
