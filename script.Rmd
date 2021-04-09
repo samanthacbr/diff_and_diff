@@ -1,10 +1,11 @@
 ---
-title: "Contribution of air conditioning adoption to future energy use under global warming"
-subtitle: "Investigación Aplicada 2"
-author: "Tagore"
-date: "2021"
+title: "Divorce laws and intimate partner violence: Evidence from Mexico"
+subtitle: Aixa García-Ramos (2021)
+author: "Samantha Cerrvantes, Luis Fierro, Coral Hernández, Alfredo Lefranc, Marco Ramos"
+date: "abril 2021"
 output:
   xaringan::moon_reader:
+    css: xaringan-themer.css  
     self_contained: true
     lib_dir: libs
     nature:
@@ -16,7 +17,16 @@ knitr::opts_chunk$set(echo = FALSE)
 options(scipen = 999)
 ```
 
-# Introducción
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "600i")
+)
+```
+
+## Introducción
 
 + Existe una relación entre ingreso y consumo de aire acondicionado.
 
@@ -34,7 +44,7 @@ options(scipen = 999)
 
 ---
 
-# Introducción
+### Introducción
 
 La relación AC, clima e ingreso se analiza en dos sentidos:
 
@@ -42,7 +52,12 @@ La relación AC, clima e ingreso se analiza en dos sentidos:
 
 + Márgenes extensivos: $AC= f(X_{temp},X_{income})$
 
+
+
+Nota: En adelante, los títulos quedaron muy grandes (hay que agregarles uno o dos "#")
+
 ---
+
 # Margenes intensivos
 
 Efectos fijos:
