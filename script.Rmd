@@ -109,22 +109,35 @@ donde:
 + En particular, en el ultimo grupo (>90º) cada día adiconal aumenta el consumo de electricidad en 3.2%
 
 ---
-# The Extensive Margin - Definition
+# Estrategia de Identificación: DiD
 <div style="text-align: justify">
 
-El *extensive margin* mide la relación existente entre $\color{#F25E3D}{\text{el clima}}$, $\color{#7ED957}{\text{el ingreso de los hogares}}$ y $\color{#4B5C96}{\text{la adopción de aire acondicionado}}$. Por ello, los autores recurren a los datos de la *Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH)* del INEGI para el año 2010 de donde extraen la información para 27,000 hogares y la combinan con los datos sobre clima.
-
+La autora utiliza dos especificaciones: una general (antes y después) y una donde observa el período después de tratamiento a corto y largo plazo.
+En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
 --
+$$IPV_{ist} = \gamma_s+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\miu_{t} + \epsilon_{ist} $$
 
-De manera intuitiva podemos entender el porqué de la estrategia debido a que es lógico esperar que los hogares con más recursos tengan mayor facilidad de acceso a artículos como aire acondicionado. Adicionalmente, extiende el análisis "simplista" de solo considerar la temperatura en las localidades y aprovecha información detallada de los hogares disponible para México.
+donde nuestro coeficiente de interés es $\delta$**, y:
 
---
+*ist* se refiere a la mujer *i* viviendo es el estado *s* en el año de la encuesta *t*,
 
-De acuerdo con la información disponible para ese año, el 99% de los hogares reportó tener acceso a electricidad. El consumo anual per cápita del país era de 2,000 kW/h similar a Tayikistán (2,000), Costa Rica (1,900), Tailandia (2,200) y Panamá (1,800) aunque menor que Brasil (2,400) y Estados Unidos (13,300).
+$IPV_{ist}$ indica si la mujer sufrió algún IPV en los últimos doce meses,
 
---
+$Reform_{ist}$ toma el valor de 1 si la reforma fue aprobada en el año de la encuesta *t*
 
-Respecto a la adopción de **aire acondicionado** el 13% del hogares reportó tener al menos uno. La "saturación" por estado tiene un patrón geográfico claramente concentrado en el noroeste, noreste y algunos estados del sureste. 
+$X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
+
+---
+$\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
+
+$\miu_{t}$ es el vector de EF de tiempo de la encuesta
+
+Se utilizan *wild cluster bootstrap standard errors*
+
+---
+
+
+
 
 ---
 # Geographical Pattern of Air Conditioning saturation by state in Mexico
