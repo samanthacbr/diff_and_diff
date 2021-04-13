@@ -110,6 +110,7 @@ donde:
 
 ---
 # Estrategia de Identificación: DiD
+## Primera especificación
 <div style="text-align: justify">
 
 La autora utiliza dos especificaciones: una general (antes y después) y una donde observa el período después de tratamiento a corto y largo plazo.
@@ -135,9 +136,30 @@ $\miu_{t}$ es el vector de EF de tiempo de la encuesta
 Se utilizan *wild cluster bootstrap standard errors*
 
 ---
+## Segunda especificación
 
+Ahora, se analizará el período post-tratamiento a corto y largo plazo. 
 
+#####helppp no sé hacer el in line de esta
 
+$$IPV_{ist} = \gamma_s+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\miu_{t} + \epsilon_{ist} $$
+
+donde
+
+$Reform_{st}$ es igual a 1 si el estado ha estado expuesto a solo una ola: 
+
+* Ciudad de México e Hidalgo en 2011
+* Resto de los estados en 2016
+
+$\delta_1$ mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
+
+$Reform_{st}$ es igual a 2 si el estado ha estado expuesto a dos olas;
+
+* Ciudad de México e Hidalgo en 2016
+
+$\delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
+
+Problema: solo dos observaciones para el período de largo plazo
 
 ---
 # Geographical Pattern of Air Conditioning saturation by state in Mexico
